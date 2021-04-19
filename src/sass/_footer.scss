@@ -1,0 +1,176 @@
+.container-footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+    padding: 30px 60px 30px 60px;
+    flex-direction: column;
+  }
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 40px 0 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1314px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 85px;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.219;
+  letter-spacing: 0.04em;
+  color: rgb(17, 21, 24);
+
+  @media screen and (min-width: 768px) {
+    max-width: 130px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.23;
+  }
+}
+
+.logo__text--small {
+  margin-top: 4px;
+  font-size: 5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+}
+
+.logo__text--orange {
+  color: $accent;
+}
+
+.logo__icon::before {
+  content: ' ';
+  display: inline-block;
+
+  width: 15px;
+  height: 20px;
+
+  margin-left: 4px;
+  margin-right: 4px;
+
+  background-image: url(../images/svg/fire.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 30px;
+  }
+}
+
+.tel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    margin-top: 21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
+.tel-container__link {
+  display: block;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21px;
+  letter-spacing: 0.08em;
+  color: $black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.tel-container__icon {
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 23px;
+  }
+}
+
+.instagram-icon {
+  @media screen and (max-width: 767px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: auto;
+  }
+}
+
+.border-footer {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 24px;
+    border-left: 1px solid $light-grey;
+    height: 40px;
+  }
+}
+
+.copyright__text {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0em;
+  color: $light-grey;
+}
+
+.copyright__container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 21px 0 21px 0;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding: 21px 0 21px 0;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1314px;
+  }
+}
+
+.copyright {
+  background-color: $black;
+}
